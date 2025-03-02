@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./devboard logo.png" type="image/x-icon">
+    <title>DevBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F4F7FF]">
+
+    <div class="container mx-auto p-2">
+        <!-- nav bar start-->
+        <nav class="flex justify-between items-center mb-5 bg-white p-2 border rounded-xl">
+            <div class="flex justify-center items-center gap-2">
+                <img src="./assets/logo.png" class="w-7 h-7">
+                <div class="text-2xl font-semibold">DevBoard</div>
+            </div>
+            <div class="flex items-center">
+                <div class="bg-[#F4F7FF] flex justify-evenly items-center border rounded-xl p-1 gap-1">
+                    <img src="./assets/checkbox.png" class="w-4">
+                    <span id="total-tasks" class="">23</span>
+                </div>
+                <button id="bg-color" class="p-1 bg-[#F4F7FF] border rounded-xl ml-3">
+                    <img src="./assets/theme-btn.png" class="w-5">
+                </button>
+            </div>
+        </nav>
+        <!-- nav bar ended -->
+        <!-- body left side: tasks part -->
+        <main>
+            <div class="grid grid-cols-3 gap-3  bg-white rounded-lg pt-3 pl-2">
+                <!-- overview section start-->
+                <div class="grid grid-cols-3 col-span-2 justify-between">
+                    <!-- assigned task count -->
+                    <div class="w-[170px] bg-[#F4F7FF] py-2 rounded-xl mb-4  flex justify-evenly items-center ">
+                        <img src="./assets/checkbox.png" class="w-6 bg-white p-1 rounded-lg">
+                        <p class="text-xs">Task Assigned <br> <span id="task-count" class="text-lg font-bold">6</span></p>
+                    </div>
+                    <!-- discover new -->
+                    <div
+                        class="w-[250px]  bg-gradient-to-r from-[#3E58FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg mb-4 flex items-center ">
+                        <img src="./assets/board.png" class="w-7">
+                        <p class="flex-grow text-xs text-white">Discover Something New Today!</p>
+                    </div>
+                    <!-- current date -->
+                    <div class="w-[170px] ml-9 bg-[#F4F7FF] p-4 rounded-lg mb-4 flex items-center gap-2">
+                        <img src="./assets/calender.png" class="w-5">
+                        <span id="right-now" class="text-gray-600 text-xs font-semibold">Tue Feb 25 2025</span>
+                    </div>
+                </div>
+                <!-- overview section ended -->
+                <hr>
+                <!-- assigned tasks cards section -->
+                <div class="col-span-2">
+
+                    <div class="grid grid-cols-3 gap-3 p-1">
+                        <!-- card 1 -->
+                        <div class="bg-[#F4F7FF] rounded-lg p-2">
+                            <h3 class="w-[85px] font-semibold mb-2 text-sm bg-white text-center">Shop Ease</h3>
+                            <p  id="heading-1" class="text-[15px] text-gray-600 mb-4 font-bold">Fix Mobile Button Issue</p>
+                            <p class=" bg-white text-[10px] mb-2 rounded-lg p-1">a card component ha sa figure a body
+                                part, and inside body there are little and actions parts </p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-[11px] mb-2 font-semibold">Deadline: <br> 21 March 2025</p>
+                                <button
+                                    class="bg-[#3752FD] text-white px-1 my-0 rounded-sm text-[11px] h-[25px] font-semibold mb-1 comp">Completed</button>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="bg-[#F4F7FF] rounded-lg p-2">
+                            <h3 class="w-[85px] font-semibold mb-2 text-sm bg-white text-center">Soft Pay</h3>
+                            <p id="heading-2" class="text-[15px] text-gray-600 mb-4 font-bold">App Pay Success Modal</p>
+                            <p class=" bg-white text-[10px] mb-2 rounded-lg p-1">a card component ha sa figure a body
+                                part, and inside body there are little and actions parts </p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-[11px] mb-2 font-semibold">Deadline: <br> 25 March 2025</p>
+                                <button
+                                    class="bg-[#3752FD] text-white px-1 my-0 rounded-sm text-[11px] h-[25px] font-semibold mb-1 comp">Completed</button>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="bg-[#F4F7FF] rounded-lg p-2">
+                            <h3 class="w-[85px] font-semibold mb-2 text-sm bg-white text-center">Meta</h3>
+                            <p id="heading-3" class="text-[15px] text-gray-600 mb-4 font-bold">Add new reaction 👐</p>
+                            <p class=" bg-white text-[10px] mb-2 rounded-lg p-1">a card component ha sa figure a body
+                                part, and inside body there are little and actions parts </p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-[11px] mb-2 font-semibold">Deadline: <br> 31 March 2025</p>
+                                <button
+                                    class="bg-[#3752FD] text-white px-1 my-0 rounded-sm text-[11px] h-[25px] font-semibold mb-1 comp">Completed</button>
+                            </div>
+                        </div>
+                        <!-- card 4 -->
+                        <div class="bg-[#F4F7FF] rounded-lg p-2">
+                            <h3 class="w-[150px] font-semibold mb-2 text-sm bg-white text-center">Programming Hero</h3>
+                            <p id="heading-4" class="text-[15px] text-gray-600 mb-4 font-bold">Fix Video Loading Issue</p>
+                            <p class=" bg-white text-[10px] mb-2 rounded-lg p-1">a card component ha sa figure a body
+                                part, and inside body there are little and actions parts </p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-[11px] mb-2 font-semibold">Deadline: <br> 21 March 2025</p>
+                                <button
+                                    class="bg-[#3752FD] text-white px-1 my-0 rounded-sm text-[11px] h-[25px] font-semibold mb-1 comp">Completed</button>
+                            </div>
+                        </div>
+                        <!-- card 5 -->
+                        <div class="bg-[#F4F7FF] rounded-lg p-2">
+                            <h3 class="w-[85px] font-semibold mb-2 text-sm bg-white text-center">Google LLC</h3>
+                            <p id="heading-5" class="text-[15px] text-gray-600 mb-4 font-bold">Integrate AI search</p>
+                            <p class=" bg-white text-[10px] mb-2 rounded-lg p-1">a card component ha sa figure a body
+                                part, and inside body there are little and actions parts </p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-[11px] mb-2 font-semibold">Deadline: <br> 1 April 2025</p>
+                                <button
+                                    class="bg-[#3752FD] text-white px-1 my-0 rounded-sm text-[11px] h-[25px] font-semibold mb-1 comp">Completed</button>
+                            </div>
+                        </div>
+                        <!-- day 6 -->
+                        <div class="bg-[#F4F7FF] rounded-lg p-2">
+                            <h3 class="w-[95px] font-semibold mb-2 text-sm bg-white text-center">Polygon Tech</h3>
+                            <p id="heading-6" class="text-[15px] text-gray-600 mb-4 font-bold">Review Ami Probashi SIte</p>
+                            <p class=" bg-white text-[10px] mb-2 rounded-lg p-1">a card component ha sa figure a body
+                                part, and inside body there are little and actions parts </p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-[11px] mb-2 font-semibold">Deadline: <br> 5 May 2025</p>
+                                <button
+                                    class="bg-[#3752FD] text-white px-1 my-0 rounded-sm text-[11px] h-[25px] font-semibold mb-1 comp">Completed</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- assigned task cards section ended -->
+                <!-- activity log section started -->
+                <section class=" ">
+                    <div class="m-0 p-0 place-items-center">
+                        <div class="flex gap-2 items-center mb-3">
+                            <img src="./assets/activity.png" class="w-5 h-5">
+                            <p class="font-semibold">Activity Log</p>
+                        </div>
+                        <button id="clear-history" class="bg-[#3752FD] text-white px-3 pb-1 rounded-lg ">Clear History</button>
+                    </div>
+                    <div class="border-b-2 border-dashed border-gray-200 pb-3"></div>
+                    <div id="update-log" class="p-2"></div>
+                </section>
+                <!-- activity log section ended -->
+        </main>
+        <script src="./index.js"></script>
+</body>
+
+</html>
