@@ -33,6 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // js code for current date ended //
 
+// js code for to move ques-ans page // 
+document.getElementById("ques-btn")
+.addEventListener('click', function() {
+    window.location.href = "./new.html";
+})
 // js code for assigned tasks and activity log started
 document.addEventListener('DOMContentLoaded', function () {
   const completebtn = document.getElementsByClassName('comp'); 
